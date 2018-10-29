@@ -11,7 +11,7 @@ class App extends Component {
       <div className="pub-list" key={i}>
         <div>{pub.publisher}</div>
         <div className="pub-title">{pub.title}</div>
-        <div>{pub.author}</div>
+        <div dangerouslySetInnerHTML={{__html: pub.author}}></div>
       </div>
     ))
     return (
