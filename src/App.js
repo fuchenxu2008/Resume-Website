@@ -37,7 +37,7 @@ class App extends Component {
           <h2 className="resume-heading">SELECTED PUBLICATIONS</h2>
           {pubs}
         </div>
-        <footer>{en_name}'s Personal HomePage.</footer>
+        <footer>@{en_name}'s Personal HomePage.</footer>
       </div>
     );
   }

@@ -57,7 +57,8 @@
 footer {
   display: flex;
   align-items: center;
-  padding: 3% 6%;
+  padding: 30px 6%;
+  font-size: 17px;
   /* height: 80px; */
   background-color: rgb(234, 236, 238);
 }
