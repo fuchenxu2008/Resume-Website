@@ -1,32 +1,63 @@
 .App {
-  text-align: center;
+  padding: 1% 6% 2% 6%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid rgb(234, 236, 238);
+  border-bottom: 1px solid rgb(234, 236, 238);
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  padding: 11px 16px;
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+}
+
+.avatar-img {
+  max-width: 150px;
+}
+
+.resume-name {
+  font-size: 34px;
+}
+
+.resume-heading {
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-detail {
+  list-style: none;
+  margin: 0;
+  padding-left: 30px;
+  line-height: 22.4px;
+}
+
+.contact-detail span {
+  font-weight: 400;
+}
+
+.pub-list {
+  margin-bottom: 25px;
+}
+
+.pub-title {
+  font-weight: bold;
+  color: rgb(52, 114, 206);
+}
+
+footer {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 3% 6%;
+  /* height: 80px; */
+  background-color: rgb(234, 236, 238);
 }

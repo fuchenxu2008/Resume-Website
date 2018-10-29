@@ -1,0 +1,40 @@
+{
+    "contact": {
+        "name": "Zhihe Zhao",
+        "en_name": "Kyrie",
+        "tel": "+86 188-9699-2152",
+        "email": "zhihe.zhao14 AT student.xjtlu.edu.cn",
+        "address": "Suzhou, China"
+    },
+    "about": "My name is Zhao zhihe, which represents the expectation that me becoming a notable person in my family. On the way of undertaking the arduous task, I have been working hard and gradually found my interest in the research or career area, which will be depicted in detail below. Concerning to daily life, I am a Saxophone amateur who has a keen on jazz and a crazy fan of the NBA team, Cavalier, who possesses the most consequential superstar player on the ground, LeBron James.",
+    "publications": [
+        {
+            "publisher": "2018 | The 3rd ACM/IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI, 2018), Orlando, Florida",
+            "title": "Demo Abstract: Smart City: a Real-time Environmental Monitoring System on Green Roof",
+            "author": "Z. Zhao, J. Wang, C. Fu, D. Liu, B. Li"
+        }, {
+            "publisher": "2018 | Journal of Sensors 2018 (Sensing and Data-Driven Control for Smart Building and Smart City Systems (SBSCS)), Hindawi",
+            "title": "Design of a Smart Sensor Network System for Real-Time Air Quality Monitoring on Green Roof",
+            "author": "Z. Zhao, J. Wang, C. Fu, Z. Liu, D. Liu, B. Li"
+        }, {
+            "publisher": "2018 | The 16th ACM Conference on Embedded Networked Sensor Systems (SenSys, 2018), ShenZhen, China",
+            "title": "Demo Abstract: ECRT: An Edge Computing System for Real-Time Image-based Object Tracking",
+            "author": "Z. Zhao, Z. Jiang, N. Ling, X. Shuai, X. Guo"
+        }
+    ],
+    "research": [
+        {
+
+        }
+    ],
+    "internship": [
+        {
+
+        }
+    ],
+    "extracurricular": [
+        {
+            
+        }
+    ]
+}
