@@ -1,9 +1,12 @@
+@import url(//at.alicdn.com/t/font_570374_brdjbx4mzsj.css);
+
 .App {
   padding: 1% 6% 2% 6%;
 }
 
 .navbar {
   display: flex;
+  /* background-color: rgb(240, 240, 240); */
   font-size: 16px;
   font-weight: 400;
   border-top: 1px solid rgb(234, 236, 238);
@@ -11,10 +14,39 @@
   margin-bottom: 20px;
 }
 
-.navbar a {
+.navbar > nav {
+  display: flex;
+}
+
+.navbar > nav > a, .navbar a {
   padding: 11px 16px;
   color: rgb(23, 23, 23);
   text-decoration: none;
+}
+
+.expand-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar > nav {
+    flex-direction: column;
+  }
+  .navbar a:nth-child(1) {
+    align-self: flex-start;
+  }
+  .hide-nav {
+    display: none !important;
+  }
+  .expand-btn {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
 }
 
 .avatar-img {
@@ -38,7 +70,7 @@
   list-style: none;
   margin: 0;
   padding-left: 30px;
-  line-height: 22.4px;
+  /* line-height: 22.4px; */
 }
 
 .contact-detail span {
@@ -54,15 +86,34 @@
   color: rgb(52, 114, 206);
 }
 
+.detail-list {
+  padding-left: 20px;
+}
+
+.exp-heading-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 6%;
   font-size: 17px;
-  /* height: 80px; */
+  
   background-color: rgb(234, 236, 238);
 }
 
 footer a {
   color: rgb(52, 114, 206);
+}
+
+footer > a {
+  display: flex;
+  align-items: center;
+}
+
+footer a img {
+  width: 25px;
 }
