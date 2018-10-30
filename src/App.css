@@ -62,3 +62,7 @@ footer {
   /* height: 80px; */
   background-color: rgb(234, 236, 238);
 }
+
+footer a {
+  color: rgb(52, 114, 206);
+}

@@ -17,10 +17,11 @@ class App extends Component {
     return (
       <div>
         <div className="App">
-          <h1 className="resume-name">{name} / {en_name}</h1>
+          <h1 className="resume-name" id="top">{name} / {en_name}</h1>
           <div className="navbar">
-            <a href="#">Home</a>
-            <a href={CV} target="_blank">Resume/CV</a>
+            <a href="#top">Home</a>
+            <a href="#pub">Publications</a>
+            <a href={CV} target="_blank" rel="noopener noreferrer">Resume/CV</a>
           </div>
           <div className="contact">
             <div>
@@ -34,10 +35,10 @@ class App extends Component {
             </ul>
           </div>
           <p>{about}</p>
-          <h2 className="resume-heading">SELECTED PUBLICATIONS</h2>
+          <h2 className="resume-heading" id="pub">SELECTED PUBLICATIONS</h2>
           {pubs}
         </div>
-        <footer>@{en_name}'s Personal HomePage.</footer>
+        <footer>@{en_name}'s Personal HomePage.&nbsp;<a href="#top">Back to Top</a></footer>
       </div>
     );
   }
