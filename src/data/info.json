@@ -11,15 +11,18 @@
         {
             "publisher": "2018 | The 3rd ACM/IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI, 2018), Orlando, Florida",
             "title": "Demo Abstract: Smart City: a Real-time Environmental Monitoring System on Green Roof",
-            "author": "<b>Z. Zhao</b>, J. Wang, C. Fu, D. Liu, B. Li"
+            "author": "<b>Z. Zhao</b>, J. Wang, C. Fu, D. Liu, B. Li",
+            "link": "1.pdf"
         }, {
             "publisher": "2018 | Journal of Sensors 2018 (Sensing and Data-Driven Control for Smart Building and Smart City Systems (SBSCS)), Hindawi",
             "title": "Design of a Smart Sensor Network System for Real-Time Air Quality Monitoring on Green Roof",
-            "author": "<b>Z. Zhao</b>, J. Wang, C. Fu, Z. Liu, D. Liu, B. Li"
+            "author": "<b>Z. Zhao</b>, J. Wang, C. Fu, Z. Liu, D. Liu, B. Li",
+            "link": "2.pdf"
         }, {
             "publisher": "2018 | The 16th ACM Conference on Embedded Networked Sensor Systems (SenSys, 2018), ShenZhen, China",
             "title": "Demo Abstract: ECRT: An Edge Computing System for Real-Time Image-based Object Tracking",
-            "author": "<b>Z. Zhao</b>, Z. Jiang, N. Ling, X. Shuai, X. Guo"
+            "author": "<b>Z. Zhao</b>, Z. Jiang, N. Ling, X. Shuai, X. Guo",
+            "link": "3.pdf"
         }
     ],
     "research": [

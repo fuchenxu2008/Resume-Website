@@ -10,7 +10,14 @@ class App extends Component {
     const pubs = publications.map((pub, i) => (
       <div className="pub-list" key={i}>
         <div>{pub.publisher}</div>
-        <div className="pub-title">{pub.title}</div>
+        <a
+          className="pub-title"
+          href={pub.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {pub.title}
+        </a>
         <div dangerouslySetInnerHTML={{__html: pub.author}}></div>
       </div>
     ))
