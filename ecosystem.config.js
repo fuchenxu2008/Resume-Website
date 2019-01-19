@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'Serve',
+    name: 'KyrieCV',
     script: 'yarn serve',
     instances: 1,
     autorestart: true,
