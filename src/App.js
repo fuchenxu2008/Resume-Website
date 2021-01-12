@@ -1,115 +1,198 @@
-import React, { Component } from 'react';
-import { contact, about, publications, research, internship, extracurricular } from './data/info.json';
+import React, { Component, Fragment } from 'react';
+import {
+  contact,
+  education,
+  workExperiences,
+  personalProjects,
+  extracurricular,
+  skills,
+  github,
+} from './data/info.json';
 import avatar from './data/avatar.jpg';
-import CV from './data/CV.pdf';
-import github from './github.png';
 import './App.css';
 
-const ExpDetail = ({detail}) => (
-  <div className="pub-list">
-    <div className="exp-heading-box">
-      <div className="pub-title">{detail.title}</div>
-      <span>{detail.time}</span>
-    </div>
-    <ul className="detail-list">
-      {detail.efforts.map((effort, i) => (
-        <li key={i}>
-          {effort}
-        </li>
-      ))}
-    </ul>
+const ExpHeading = ({ title, time }) => (
+  <div className="exp-heading-box">
+    <div className="pub-title">{title}</div>
+    <span>{time}</span>
   </div>
-)
+);
+
+const BulletList = ({ items }) => (
+  <ul className="detail-list">
+    {items.map((item, i) => (
+      <li key={i}>{item}</li>
+    ))}
+  </ul>
+);
+
+const Chart = ({ language, proficiency }) => (
+  <div className="chart-item">
+    <div className="chart-proficiency">
+      <div className="chart-bar">
+        <span style={{ width: proficiency }} />
+      </div>
+      <span>
+        {proficiency >= 90
+          ? '非常熟练'
+          : proficiency >= 80
+            ? '较为熟练'
+            : proficiency >= 70
+              ? '熟练'
+              : proficiency >= 50
+                ? '熟悉'
+                : ''}
+      </span>
+    </div>
+    <div>{language}</div>
+  </div>
+);
+
+const ExpDetail = ({ detail }) => (
+  <div className="pub-list">
+    <ExpHeading title={detail.title} time={detail.time} />
+    <div className="pub-detail">
+      <BulletList items={detail.efforts} />
+      {detail.img && <img src={detail.img} alt="" />}
+    </div>
+  </div>
+);
+
+/**
+ * Contact Info
+ */
+const Contact = () => {
+  const { name, en_name, email, tel } = contact;
+  return (
+    <div className="contact">
+      {avatar && <img src={avatar} alt="avatar" className="avatar-img" />}
+      <ul className="contact-detail">
+        <li>
+          <h1>
+            {name} {en_name}
+          </h1>
+        </li>
+        <li>
+          <i className="iconfont icon-youxiang" />
+          <span>邮件: &nbsp;</span>
+          {email}
+        </li>
+        <li>
+          <i className="iconfont icon-phone" />
+          <span>电话: &nbsp;</span>
+          {tel}
+        </li>
+        {github && (
+          <li>
+            <i className="iconfont icon-github" />
+            <span>Github: &nbsp;</span>
+            <a href={github}>{github}</a>
+          </li>
+        )}
+      </ul>
+    </div>
+  );
+};
+/**
+ * Education
+ */
+const Education = () => (
+  <Fragment>
+    <h2 className="resume-heading" id="education">
+      教育背景
+    </h2>
+    <ExpHeading
+      title={`${education.school} ${education.major}`}
+      time={education.time}
+    />
+    <BulletList items={education.notes} />
+  </Fragment>
+);
+
+/**
+ * Work Experiences
+ */
+const Work = () => (
+  <Fragment>
+    <h2 className="resume-heading" id="work">
+      工作经历
+    </h2>
+    {workExperiences.map((data, i) => (
+      <ExpDetail detail={data} key={i} />
+    ))}
+  </Fragment>
+);
+
+/**
+ * Personal Projects
+ */
+const Personal = () => (
+  <Fragment>
+    <h2 className="resume-heading" id="personal">
+      个人项目
+    </h2>
+    {personalProjects.map((data, i) => (
+      <ExpDetail detail={data} key={i} />
+    ))}
+  </Fragment>
+);
+
+/**
+ * Extracurricular
+ */
+const Extra = () => (
+  <Fragment>
+    <h2 className="resume-heading" id="extra">
+      其他经历
+    </h2>
+    {extracurricular.map((data, i) => (
+      <ExpDetail detail={data} key={i} />
+    ))}
+  </Fragment>
+);
+
+/**
+ * Skills
+ */
+const Skills = () => (
+  <Fragment>
+    <h2 className="resume-heading" id="skill">
+      技能
+    </h2>
+    <BulletList items={skills.descriptions} />
+    <div className="chart-list">
+      {skills.charts.map((chart, i) => (
+        <Chart
+          key={i}
+          language={chart.language}
+          proficiency={chart.proficiency}
+        />
+      ))}
+    </div>
+  </Fragment>
+);
 
 class App extends Component {
   state = { openNav: false };
 
   switchNav = () => {
     this.setState((prevState) => ({
-      openNav: !prevState.openNav
-    }))
-  }
+      openNav: !prevState.openNav,
+    }));
+  };
 
   render() {
-    /**
-     * Navbar
-     */
-    const navbar = (
-      <div className="navbar">
-        {CV && <a href={CV} target="_blank" rel="noopener noreferrer">Resume/CV</a>}
-        { //eslint-disable-next-line
-          <a className="expand-btn iconfont icon-menu" onClick={this.switchNav}></a>
-        }
-        <nav className={this.state.openNav ? "show-nav" : "hide-nav"}>
-          {publications.length > 0 && <a href="#pub">Publications</a>}
-          {research.length > 0 && <a href="#res">Research</a>}
-          {internship.length > 0 && <a href="#intern">Internship</a>}
-          {extracurricular.length > 0 && <a href="#extra">Extracurricular</a>}
-        </nav>
-      </div>
-    )
-    /**
-     * Contact Info
-     */
-    const {name, en_name, email, tel, address, birthday} = contact;
-    const self = (
-      <div className="contact">
-        {avatar && <img src={avatar} alt="avatar" className="avatar-img" />}
-        <ul className="contact-detail">
-          <li><b>{name} ({en_name})</b></li>
-          <li><span>Birthday: </span>{birthday}</li>
-          <li><span>Email: </span>{email}</li>
-          <li><span>Phone: </span>{tel}</li>
-          <li><span>Address: </span>{address}</li>
-        </ul>
-      </div>
-    )
-    /**
-     * Publications
-     */
-    const pubs = publications.map((pub, i) => (
-      <div className="pub-list" key={i}>
-        <div>{pub.publisher}</div>
-        <div className="pub-title">{pub.title}</div>
-        <div dangerouslySetInnerHTML={{__html: pub.author}}></div>
-      </div>
-    ))
-    /**
-     * Researches
-     */
-    const researches = research.map((data, i) => <ExpDetail detail={data} key={i}/>)
-    /**
-     * Internship
-     */
-    const interns = internship.map((data, i) => <ExpDetail detail={data} key={i} />)
-    /**
-     * Extracurricular
-     */
-    const extras = extracurricular.map((data, i) => <ExpDetail detail={data} key={i} />)
-
     return (
       <div>
+        <Contact />
         <div className="App">
-          <h1 className="resume-name" id="top">{name} / {en_name}</h1>
-          {navbar}
-          {self}
-          <p>{about}</p>
-          {publications.length > 0 && <h2 className="resume-heading" id="pub">SELECTED PUBLICATIONS</h2>}
-          {pubs}
-          {research.length > 0 && <h2 className="resume-heading" id="res">RESEARCH</h2>}
-          {researches}
-          {internship.length > 0 && <h2 className="resume-heading" id="intern">INTERNSHIP</h2>}
-          {interns}
-          {extracurricular.length > 0 && <h2 className="resume-heading" id="extra">EXTRACURRICULAR EXPERIENCES</h2>}
-          {extras}
+          <Education />
+          {workExperiences.length > 0 && <Work />}
+          <br />
+          {personalProjects.length > 0 && <Personal />}
+          {extracurricular.length > 0 && <Extra />}
+          <Skills />
         </div>
-        <footer>
-          <div>
-            @{en_name}'s Personal HomePage.&nbsp;
-            <a href="#top">Back to Top</a>
-          </div>
-          <a href="https://github.com/fuchenxu2008/Resume-Website"><img src={github} alt="" /></a>
-        </footer>
       </div>
     );
   }

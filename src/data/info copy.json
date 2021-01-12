@@ -1,0 +1,68 @@
+{
+    "contact": {
+        "name": "Chenxu Fu",
+        "en_name": "Steve",
+        "birthday": "April 26, 1997",
+        "tel": "+86 181-1276-9460",
+        "email": "chenxu.fu15 AT student.xjtlu.edu.cn",
+        "address": "Suzhou, China"
+    },
+    "about": "My name is Chenxu Fu, an undergraduate student in XJTLU. I'm obsessed with Web technologies, including Full Stack development using React, Node.js and MongoDB. Since I had quite some experiences concerning the full procedure with App development and IoT related project, I'm seeking to take a further step to get a master degree in Software Engineering to get a deeper understanding of this field. Besides academic interest, I love fitness and music by Charlie Puth :)",
+    "publications": [
+        {
+            "publisher": "2018 | The 3rd ACM/IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI, 2018), Orlando, Florida",
+            "title": "Demo Abstract: Smart City: a Real-time Environmental Monitoring System on Green Roof",
+            "author": "Z. Zhao, J. Wang, <b>C. Fu</b>, D. Liu, B. Li"
+        }, {
+            "publisher": "2018 | Journal of Sensors 2018 (Sensing and Data-Driven Control for Smart Building and Smart City Systems (SBSCS)), Hindawi",
+            "title": "Design of a Smart Sensor Network System for Real-Time Air Quality Monitoring on Green Roof",
+            "author": "Z. Zhao, J. Wang, <b>C. Fu</b>, Z. Liu, D. Liu, B. Li"
+        }
+    ],
+    "research": [
+        {
+            "title": "Wind Tunnel Real-Time Data Monitoring System, XJTLU",
+            "time": "May 2017 - September 2017",
+            "efforts": [
+                "Participated in a five-member team developing an embedded IoT based real-time data monitoring system for modeling outdoor environment in a wind tunnel.",
+                "Implemented a low latency cloud computing platform utilizing MQTT to handle data transmission from wireless sensor networks; developed a Web GUI with sophisticated visualization functionalities, enabling researchers to control the height of sensors remotely and monitor changes of air quality in real time.",
+                "Research work led to a conference demo presented at IoTDI 2018 in Orlando and an SCI journal paper published by Journal of Sensors, Hindawi."
+            ]
+        }
+    ],
+    "internship": [
+        {
+            "title": "Software Engineer, Marketing Department, BOSCH, Shanghai",
+            "time": "June 2017 - August 2017",
+            "efforts": [
+                "Developed a website to advertise sensor chips on sale on which customers could browse for products and contact for purchase.",
+                "Maintained the WeChat public platform of the company, posting articles introducing technical statistics of the companys latest sensor chips."
+            ]
+        }
+    ],
+    "extracurricular": [
+        {
+            "title": "Self-Developed Classtable APP for XJTLU Students",
+            "time": "August 2017 - September 2018",
+            "efforts": [
+                "Independently created an app to enable students to view their class schedule on their phone and integrate it into calendars. Version 1.0 was built using PHP and Python, while version 2.0 utilized React and Node.js for better experience.",
+                "Achieved over 11k users so far and reported by the schools news and local TV station."
+            ]
+        }, {
+            "title": "Team Member, HACKATHON Blockchain Competition, Shanghai",
+            "time": "August 2018",
+            "efforts": [
+                "Collaboratively designed and implemented an online decentralized exchange connecting algorithmic trading developers and investors based on Ethereum blockchain technology.",
+                "Responsible for data visualization on the frontend featuring real-time trend of different cryptocurrency prices utilizing React Eschart.js and participated in applying encryption algorithms on the backend powered by Python Flask."
+            ]
+        }, {
+            "title": "Team Leader, Apple iOS Summer Camp, Dongguan, Guangzhou",
+            "time": "August 2017",
+            "efforts": [
+                "Teamed up with seven students from different universities nationwide and took a five-day training course on including creativity cultivation, fashion design as well as programming in Swift.",
+                "Led the team and collaborated on an innovative app for users to put note memos in AR world.",
+                "Gave a demo using a prototype with basic AR functionality deployed to illustrate the idea of the app and demonstrated a methodical process of planning and analyzing in the presentation."
+            ]
+        }
+    ]
+}
