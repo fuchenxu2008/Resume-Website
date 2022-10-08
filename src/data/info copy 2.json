@@ -1,0 +1,140 @@
+{
+  "contact": {
+    "name": "傅晨旭",
+    "en_name": "Steve",
+    "tel": "18112769460",
+    "email": "fuchenxu2008@163.com"
+  },
+  "education": {
+    "school": "西交利物浦大学",
+    "major": "信息与计算科学",
+    "time": "2015/09 - 2019/06",
+    "notes": [
+      "西安交通大学与英国利物浦大学合作办学",
+      "GPA: 3.64/4.00 一等学位",
+      "托福100，GRE321"
+    ]
+  },
+  "workExperiences": [
+    {
+      "title": "苏州甫也信息科技有限公司 Co-founder & 项目技术Leader「纸条App」",
+      "time": "2019/03-2020/10",
+      "efforts": [
+        "合伙创业，推出面向大学生校内匿名社交与信息分享的微信小程序",
+        "负责前后端架构，带领6人开发团队并定期培训; 负责团队成员分工，管理项目开发进度，git版本控制以及代码审查，实际产出了一半以上的代码；参与产品功能设计，收集用户反馈",
+        "产品前端基于Vue.js(微信小程序框架uni-app)，后端基于Express (Node.js) 以及MongoDB + Redis数据库",
+        "产品在上线3月后突破两万用户，上线半年后公司实现盈利，现已全面覆盖西浦市场; 因主要业务趋于稳定和个人规划原因离职"
+      ],
+      "img": "https://tva1.sinaimg.cn/large/007S8ZIlgy1ggz2p1xfdgj3076076wfd.jpg"
+    },
+    {
+      "title": "苏州甫也信息科技有限公司「纸条留学圈」微信小程序",
+      "time": "2020/03-2020-04",
+      "efforts": [
+        "参与开发了旨在为准备出国留学的西浦同学提供一个分享Offer和申请经验的平台",
+        "负责基于现有产品后端的重构，参与开发迭代后UI重新设计的产品前端",
+        "项目使用了Vue.js(微信小程序框架uni-app)，初始后端使用微信云函数，迭代后使用Nest.js + MongoDB"
+      ],
+      "img": "https://tva1.sinaimg.cn/large/007S8ZIlgy1gjk3roelqpj30nw0nw43m.jpg"
+    },
+    {
+      "title": "苏州甫也信息科技有限公司 独立开发「头发保卫战」",
+      "time": "2019/07-2019/08",
+      "efforts": [
+        "为吸引2019届新生流量并引流至「纸条App」，推出了省份之间PK人气手速的Web小游戏, 具有实时弹幕、几率抽取纸条道具等功能",
+        "独立设计前后端架构及数据结构并实施，并与产品设计团队沟通需求，优化用户体验",
+        "项目基于React + Redux + Node.js技术栈，并使用了Redis + Socket.IO来确保该相对高并发场景下，数据的实时准确性；使用了Lottie实现了页面中的动画",
+        "该活动限时上线一周，有逾3000人参与，并成功引流用户到「纸条App」"
+      ],
+      "img": "https://tva1.sinaimg.cn/large/007S8ZIlgy1ggz2ur8lbxj307i07idfr.jpg"
+    },
+    {
+      "title": "苏州甫也信息科技有限公司 项目Leader「纸条App」后台管理系统",
+      "time": "2019/06-2019/08",
+      "efforts": [
+        "为管理平台提供内容以及用户产生内容 (UGC) 而开发的面向内部的管理系统网页",
+        "带领2人团队，负责项目架构，开发进度管理以及代码审查",
+        "项目基于React + Node.js (TypeScript) + Apollo GraphQL，并实现了权限分级，方便运营团队成员管理被授权的内容"
+      ]
+    },
+    {
+      "title": "软件开发实习生 - 博世（中国）投资有限公司，上海",
+      "time": "2017/06 - 2017/08",
+      "efforts": [
+        "初次实战使用Web技术开发展示芯片产品的推广网页，客户可以浏览搜索并联系采购",
+        "维护公司微信公众号平台，发布介绍最新芯片产品参数的推文",
+        "英文的交流环境给了我宝贵的口语练习机会，也让我熟悉了在企业工作的流程。在我的导师和同事的帮助下，我了解并学习了很多有关硬件知识，以补充我的软件技能。"
+      ]
+    }
+  ],
+  "personalProjects": [
+    {
+      "title": "校园课表助手",
+      "time": "2017/08 - 2020/09",
+      "efforts": [
+        "由于之前通过学校教务网站查询课表过于繁琐，为解决这个痛点，独立开发了一个网页和微信小程序，使得学生能够在手机上查看课程并将其导出到日历中；后续增加了查成绩计算 GPA、管理个人日程等功能",
+        "初代版本是使用PHP和Python爬虫构建的网页 App，迭代升级后使用 React 和 Node.js 技术栈构建了渐进式 Web 应用 (PWA) 以及微信小程序，以获得更好的体验",
+        "发布后获得学校IT部门认可支持并给予课表 API 权限，截至目前已有超过 1.6w 用户"
+      ],
+      "img": "https://tva1.sinaimg.cn/large/007S8ZIlgy1ggz2s2r54tj3076076758.jpg"
+    },
+    {
+      "title": "创新工场小程序",
+      "time": "2019/01 - 2019/03",
+      "efforts": [
+        "为西浦创新港独立开发的活动预约小程序，功能包括定期举办的讲座预约、Workshop 内 3D 打印机预约，以及需求发布平台",
+        "前端使用微信小程序框架 Taro (基于 React) + Redux，后端使用 Node.js + MongoDB",
+        "发布后成功用来举办多场活动，并保证了 3D 打印机预约的可靠可用性"
+      ]
+    },
+    {
+      "title": "风洞实时数据监控系统",
+      "time": "2017/05 - 2019/09",
+      "efforts": [
+        "参与 5 人科研团队，开发了一个基于嵌入式 IoT 的实时数据监控系统，用于对风洞中的室外环境进行建模",
+        "利用 MQTT 实施了低延迟的云计算平台，以处理来自无线传感器网络的数据传输； 使用 HighChart.js + PHP + MySQL 开发了具有复杂可视化功能的 Web App，除此之外还可以远程控制传感器的高度并实时监控空气质量的变化",
+        "以第三作者发表论文在 ACM IoTDI 2018 会议和 Journal of Sensors, Hindawi 期刊上；被邀请赴美国奥兰多参加 IoTDI 2018 会议并进行现场演示"
+      ]
+    }
+  ],
+  "extracurricular": [
+    {
+      "title": "上海众安黑客松区块链竞赛",
+      "time": "2018/08",
+      "efforts": [
+        "基于以太坊区块链技术，协同设计和实现了一个在线分散交易所，将算法交易开发商和投资者联系起来",
+        "负责使用 React Echarts.js 在前端进行数据可视化，以显示不同加密货币价格的实时趋势，并参与使用 Python Flask 在后端应用加密算法",
+        "主要功能包括：资产可赎回机制，集成的回测，基于智能合约的交易，开发人员对算法的使用以及与证券交易所的标准接口"
+      ]
+    },
+    {
+      "title": "苹果 iOS 夏令营",
+      "time": "2017/08",
+      "efforts": [
+        "与来自全国不同大学的7名学生合作，参加了为期5天的培训课程，内容涉及创造力培养，时装设计以及Swift编程",
+        "领导团队并合作开发了一个可以让用户在AR世界中放置便笺的创新iOS应用程序",
+        "现场演示已实现基本AR功能的原型，并阐述应用程序的构想、设计方案和分析过程"
+      ]
+    }
+  ],
+  "skills": {
+    "descriptions": [
+      "熟悉前端Web网页开发和微信小程序开发，在实战项目中多次运用Vue，React以及Node.js",
+      "熟练使用MongoDB以及其Aggregation操作，熟悉MySQL，熟练运用Redis存储常用数据结构，对耗时请求进行缓存",
+      "熟练运用git，了解版本控制，有利用git flow领导团队开发的经验，有项目管理经验",
+      "熟悉Linux命令，有较多在Ubuntu和Debian操作系统下的运维经历，包括配置Nginx、PM2部署应用程序等"
+    ],
+    "charts": [
+      { "language": "JavaScript(ES6)", "proficiency": 90 },
+      { "language": "Node.js", "proficiency": 90 },
+      { "language": "React", "proficiency": 85 },
+      { "language": "Vue.js", "proficiency": 80 },
+      { "language": "HTML", "proficiency": 90 },
+      { "language": "CSS", "proficiency": 90 },
+      { "language": "Java", "proficiency": 60 },
+      { "language": "Python", "proficiency": 70 },
+      { "language": "PHP", "proficiency": 70 }
+    ]
+  },
+  "github": "https://github.com/fuchenxu2008"
+}
