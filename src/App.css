@@ -1,7 +1,7 @@
 @import url(iconfont.css);
 
 .App {
-  padding: 1% 4% 2% 4%;
+  padding: 0 4%;
 }
 
 .avatar-img {
@@ -54,6 +54,10 @@
   text-decoration: none;
 }
 
+.edu-list:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .pub-list:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -90,6 +94,11 @@
 }
 
 .exp-heading-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-subheading-box {
   display: flex;
   justify-content: space-between;
 }

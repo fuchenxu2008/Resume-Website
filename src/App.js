@@ -11,13 +11,16 @@ import {
 // import avatar from './data/avatar.jpg';
 import './App.css';
 
-const ExpHeading = ({ company, position, time }) => (
+const ExpHeading = ({ company, position, time, location }) => (
   <>
     <div className="exp-heading-box">
       <div className="pub-title">{company}</div>
       <span>{time}</span>
     </div>
-    {position && <div className="pub-position">{position}</div>}
+    <div className="exp-subheading-box">
+      {position && <div className="pub-position">{position}</div>}
+      {location && <div className="pub-location">{location}</div>}
+    </div>
   </>
 );
 
@@ -35,12 +38,26 @@ const ExpDetail = ({ detail }) => (
       company={detail.company}
       position={detail.position}
       time={detail.time}
+      location={detail.location}
     />
     <div className="pub-detail">
       <BulletList items={detail.efforts} />
       {detail.img && <img src={detail.img} alt="" />}
     </div>
   </div>
+);
+
+const EducationItem = ({ school, major, time, location }) => (
+  <>
+    <div className="exp-heading-box">
+      <div className="pub-title">{school}</div>
+      <span>{time}</span>
+    </div>
+    <div className="exp-subheading-box">
+      <div className="pub-major">{major}</div>
+      <div className="pub-location">{location}</div>
+    </div>
+  </>
 );
 
 /**
@@ -83,10 +100,14 @@ const Education = () => (
     <h2 className="resume-heading" id="education">
       教育背景
     </h2>
-    {education.map((edu) => (
-      <div key={edu.school}>
-        <ExpHeading company={`${edu.school} ${edu.major}`} time={edu.time} />
-        <BulletList items={edu.notes} />
+    {education.map((edu, i) => (
+      <div className="edu-list" key={i}>
+        <EducationItem
+          school={edu.school}
+          major={edu.major}
+          time={edu.time}
+          location={edu.location}
+        />
       </div>
     ))}
   </Fragment>
